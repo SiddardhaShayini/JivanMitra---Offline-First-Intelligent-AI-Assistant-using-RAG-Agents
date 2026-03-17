@@ -262,14 +262,16 @@ pip install -r requirements.txt
 
 **Key Dependencies:**
 ```
-langchain>=0.1.0
-faiss-cpu>=1.7.0
-sentence-transformers>=2.2.0
-torch>=2.0.0
-openai>=0.27.0
-python-dotenv>=0.21.0
-flask>=2.3.0
-pydantic>=2.0.0
+langchain
+langchain-community
+langchain-text-splitters
+langchain-classic
+langchain-core
+langchain-huggingface
+pypdf
+sentence-transformers
+faiss-cpu
+python-dotenv
 ```
 
 ### Download Models (Offline Setup)
@@ -287,8 +289,7 @@ ollama pull mistral
 ### Configure Environment
 Create a `.env` file:
 ```
-OPENAI_API_KEY=your_key_if_using_openai
-LLM_MODEL=ollama:llama2  # or local model
+LLM_MODEL=ollama:llama2
 EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 FAISS_INDEX_PATH=./embeddings/faiss_index
 DATA_DIR=./data
@@ -533,71 +534,10 @@ python scripts/test_conversation.py --iterations 50
 
 ---
 
-## 📚 Resources & References
-
-### RAG & Vector Databases
-- [LangChain Documentation](https://python.langchain.com/)
-- [FAISS Documentation](https://github.com/facebookresearch/faiss)
-- [Retrieval-Augmented Generation Paper](https://arxiv.org/abs/2005.11401)
-- [Sentence Transformers](https://www.sbert.net/)
-
-### Agentic AI & ReACT
-- [ReACT: Synergizing Reasoning and Acting in LLMs](https://arxiv.org/abs/2210.03629)
-- [LangChain Agent Documentation](https://python.langchain.com/docs/modules/agents/)
-- [Tool Use and Function Calling](https://platform.openai.com/docs/guides/function-calling)
-
-### Voice Interfaces
-- [OpenAI Whisper](https://github.com/openai/whisper)
-- [pyttsx3 Documentation](https://pyttsx3.readthedocs.io/)
-- [Edge-TTS](https://github.com/reuben/edge-tts)
-
----
-
-## 🤝 Contributing
-
-This project welcomes contributions from developers, researchers, and community members interested in:
-- Elder-care technology
-- Accessible AI systems
-- RAG and agent-based architectures
-- Voice interfaces
-- Indian language NLP
-
-**How to Contribute:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request with detailed description
-
----
-
-## 📝 Citation
-
-If you use JivanMitra in your research or project, please cite as:
-
-```bibtex
-@project{jivanmitra2025,
-  title={JivanMitra: Offline-First Intelligent AI Assistant using RAG & Agentic AI},
-  author={Siddardha, S.},
-  year={2025},
-  url={https://github.com/SiddardhaShayini/JivanMitra---Offline-First-Intelligent-AI-Assistant-using-RAG-Agents}
-}
-```
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** – see LICENSE file for details.
 
----
-
-## 🙏 Acknowledgments
-
-- Elderly individuals and caregivers who inspire this work
-- Open-source communities: LangChain, FAISS, Hugging Face, Ollama
-- Academic researchers in accessibility AI and human-computer interaction
-- Family and mentors for continued support
 
 ---
 
@@ -613,3 +553,8 @@ For questions, suggestions, or collaboration inquiries:
 **Last Updated:** March 2025
 
 **Made with 💜 for elder care and accessible AI**
+
+## 👨‍💻 Developer
+**Siddardha Shayini** 
+
+
