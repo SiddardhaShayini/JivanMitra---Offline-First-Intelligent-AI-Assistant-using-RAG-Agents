@@ -546,7 +546,6 @@ This project is licensed under the **MIT License** – see LICENSE file for deta
 For questions, suggestions, or collaboration inquiries:
 
 - **GitHub Issues:** [Report bugs or feature requests](https://github.com/SiddardhaShayini/JivanMitra---Offline-First-Intelligent-AI-Assistant-using-RAG-Agents/issues)
-- **Discussions:** [Join community discussions](https://github.com/SiddardhaShayini/JivanMitra---Offline-First-Intelligent-AI-Assistant-using-RAG-Agents/discussions)
 
 ---
 
